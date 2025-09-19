@@ -15,14 +15,14 @@
  */
 
 import QtQuick 2.7
-import Ubuntu.Components 1.3
+import Lomiri.Components 1.3
 import QtQuick.Controls 2.2
 import QtQuick.Layouts 1.3
 import Qt.labs.settings 1.0
 import io.thp.pyotherside 1.3
-import Ubuntu.Content 1.3
+import Lomiri.Content 1.3
 import QtQuick.Window 2.2
-import Ubuntu.Components.Themes 1.3
+import Lomiri.Components.Themes 1.3
 
 Window {
     id: root
@@ -158,7 +158,7 @@ Window {
                 iconName: "add"
                 width: units.gu(6)
                 colorBut: theme.palette.normal.background
-                aspectBorder: UbuntuShape.Flat
+                aspectBorder: LomiriShape.Flat
                 colorButText: theme.palette.normal.backgroundText
                 onClicked: {
                     stack.push(importPage)

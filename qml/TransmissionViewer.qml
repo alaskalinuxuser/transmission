@@ -1,10 +1,10 @@
 /*  ImgItem.qml */
 import QtQuick 2.7
 import QtQuick.Controls 2.2
-import Ubuntu.Components 1.3
-import Ubuntu.Components.Themes 1.3
+import Lomiri.Components 1.3
+import Lomiri.Components.Themes 1.3
 import io.thp.pyotherside 1.3
-import Ubuntu.Content 1.3
+import Lomiri.Content 1.3
 
 Item {
   id: root
@@ -149,10 +149,10 @@ Rectangle {
             id: progressbar1
             color: {
             if (icon=="_up") {
-            UbuntuColors.orange
+            LomiriColors.orange
           }else
           if (icon=="_share") {
-            UbuntuColors.green
+            LomiriColors.green
           }else
           {
             "#888"
@@ -222,13 +222,13 @@ OpenButton{
   }
     iconName: "delete"
     text: i18n.tr("Remove torrent")
-    colorBut: UbuntuColors.red
+    colorBut: LomiriColors.red
     colorButText: "white"
     onClicked: {
       root.torrentremove()
     }
   }
-UbuntuShape {
+LomiriShape {
   backgroundColor: theme.palette.normal.foreground
   anchors{
           top: removeButton.bottom
@@ -237,7 +237,7 @@ UbuntuShape {
           right: parent.right
           bottom: parent.bottom
         }
-  aspect: UbuntuShape.Inset
+  aspect: LomiriShape.Inset
   
 Text {  
       id: labelFiles  

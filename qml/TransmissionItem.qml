@@ -1,8 +1,8 @@
 /*  ImgItem.qml */
 import QtQuick 2.7
 import QtQuick.Controls 2.2
-import Ubuntu.Components 1.3
-import Ubuntu.Components.Themes 1.3
+import Lomiri.Components 1.3
+import Lomiri.Components.Themes 1.3
 
 Rectangle {
     id: root
@@ -83,10 +83,10 @@ Rectangle {
             id: progressbar1
             color: {
             if (icon=="_up") {
-            UbuntuColors.orange
+            LomiriColors.orange
           }else
           if (icon=="_share") {
-            UbuntuColors.green
+            LomiriColors.green
           }else
           {
             "#888"

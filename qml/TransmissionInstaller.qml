@@ -1,8 +1,8 @@
 /*  CalculatorButton.qml */
 import QtQuick 2.7
-import Ubuntu.Components 1.3
+import Lomiri.Components 1.3
 import io.thp.pyotherside 1.3
-import Ubuntu.Components.Themes 1.3
+import Lomiri.Components.Themes 1.3
 
 Item {
     id: root
@@ -86,7 +86,7 @@ Item {
         id: installbut
         property int stat:0
         text: i18n.tr("Install")
-        color: UbuntuColors.green
+        color: LomiriColors.green
         anchors{
             right: parent.right
             rightMargin: units.gu(2)

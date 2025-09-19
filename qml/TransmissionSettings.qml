@@ -1,8 +1,8 @@
 /*  ImgItem.qml */
 import QtQuick 2.7
 import QtQuick.Controls 2.2
-import Ubuntu.Components 1.3
-import Ubuntu.Components.Themes 1.3
+import Lomiri.Components 1.3
+import Lomiri.Components.Themes 1.3
 import io.thp.pyotherside 1.3
 
 Page { 
@@ -145,7 +145,7 @@ Flickable {
   }
     iconName: "delete"
     text: i18n.tr("Remove Transmission library")
-    colorBut: UbuntuColors.red
+    colorBut: LomiriColors.red
     colorButText: "white"
     onClicked: {
       root.transmissionremove()
@@ -162,7 +162,7 @@ OpenButton{
     bottomMargin: units.gu(1.5)
   }
   width: units.gu(16)
-  colorBut: UbuntuColors.green
+  colorBut: LomiriColors.green
   colorButText: "white"
   iconOffset: true
   iconName: "document-save"
